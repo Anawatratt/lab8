@@ -1,12 +1,24 @@
 #include<iostream>
 using namespace std;
 
-char before(char x){
+
 	//Write your function definition here
+
+char before(char x){
+	if(x>='A' and x<='Z')
+	{
+		x=x-1;
+		if(x=='@')
+		{
+			return 'Z';
+		}else{
+			return x;
+		}
+	}else return '0';
 }
 
 int main(){
-	//Test Case
+	
 	cout << before('A') << "\n";
 	cout << before('B') << "\n";
 	cout << before('P') << "\n";
